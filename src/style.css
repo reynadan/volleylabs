@@ -77,3 +77,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+-- Custom starts here 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
