@@ -1,10 +1,9 @@
 <template>
+  <h1>🏐 Tournois à venir</h1>
+  <nav>
+    <RouterLink to="/add-event">Ajouter un tournoi</RouterLink>
+  </nav>
   <main>
-    <h1>🏐 Tournois à venir</h1>
-    <EventList />
+    <RouterView />
   </main>
 </template>
-
-<script setup>
-import EventList from './components/EventList.vue'
-</script>

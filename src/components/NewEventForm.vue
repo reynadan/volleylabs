@@ -84,6 +84,9 @@
 <script setup>
 import { ref } from 'vue'
 import { createEvent } from '../services/sheetdb'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const event = ref({
   name: '',
@@ -107,6 +110,7 @@ async function submitForm() {
   try {
     await createEvent(event.value)
     alert('Événement créé avec succès !')
+    router.push('/')
   } catch (err) {
     console.error(err)
     alert('Erreur lors de la création.')
